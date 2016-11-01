@@ -55,6 +55,16 @@ define(['app'], function(app) {
                     templateUrl: 'templates/order/order-detail.tpl.html',
                     controller: 'indexCtrl'
                 })
+                .state('detail_', { //详细
+                    url: '/detail_',
+                    templateUrl: 'templates/order/detail.tpl.html',
+                    controller: 'indexCtrl'
+                })
+                .state('login', { //详细
+                    url: '/login',
+                    templateUrl: 'templates/order/login.tpl.html',
+                    controller: 'indexCtrl'
+                })
             /*.state('tab.sort', {
                 url: '/sort',
                 views: {

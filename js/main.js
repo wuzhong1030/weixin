@@ -10,7 +10,8 @@ require.config({
         // cordovaStatusbar:'../plugins/cordova-plugin-statusbar/www/statusbar',
         // cordovaKeyboard:'../plugins/ionic-plugin-keyboard/www/android/keyboard',
         // async:'../lib/async',
-        domReady:'../lib/domReady',
+        // domReady:'../lib/domReady',
+        jquery: '../lib/jquery-2.1.1.min.js',
         //BMap:'http://api.map.baidu.com/api?v=2.0&ak=A796271dae48229367c041db82735a4c&services=false',
 
         

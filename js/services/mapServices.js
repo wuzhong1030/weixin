@@ -1,6 +1,6 @@
-define(['domReady','async!BMap'], function(domReady){
+define(/*['domReady','async!BMap'], */function(domReady){
     'use strict'
-    var factory = function(){
+    /*var factory = function(){
         var map = new BMap.Map("bmap");
         map.centerAndZoom(new BMap.Point(116.404, 39.915), 12);
         map.enableScrollWheelZoom();
@@ -19,7 +19,7 @@ define(['domReady','async!BMap'], function(domReady){
                 })
             }
         }
-    }
+    }*/
     factory.$inject = [];
     return factory;
 });

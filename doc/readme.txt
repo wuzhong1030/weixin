@@ -9,4 +9,6 @@
 个人中心 -presonal.tpl.html  http://192.168.1.41/weixin/app/#/presonal
      -二维码 qr-code.tpl.html
 地址选择&服务时间 -ser_addr_time.tpl.html http://192.168.1.41/weixin/app/#/seraddrtime
-地址选择&服务时间 -ser_addr_time.tpl.html http://192.168.1.41/weixin/app/#/seraddrtime
+订单详细 -order-detail.tpl.html http://192.168.1.41/weixin/app/#/detail
+详情 -detail.tpl.html http://192.168.1.41/weixin/app/#/detail_
+登陆 -login.tpl.html http://192.168.1.41/weixin/app/#/login
