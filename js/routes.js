@@ -65,6 +65,11 @@ define(['app'], function(app) {
                     templateUrl: 'templates/order/login.tpl.html',
                     controller: 'indexCtrl'
                 })
+                .state('rated', { //详细
+                    url: '/rated',
+                    templateUrl: 'templates/order/rated.tpl.html',
+                    controller: 'indexCtrl'
+                })
             /*.state('tab.sort', {
                 url: '/sort',
                 views: {
