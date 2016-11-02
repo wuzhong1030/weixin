@@ -1,6 +1,6 @@
 define(/*['mainCtrl'],*/ function () {
     'use strict';
-    function ctrl($scope, $ionicPopover, /*$mainServices, $indexServices,*/ $ionicTabsDelegate, $ionicSlideBoxDelegate) {
+    function ctrl($scope, $ionicPopover, $ionicPopup, /*$mainServices, $indexServices,*/ $ionicTabsDelegate, $ionicSlideBoxDelegate) {
         //$mainServices.showLoading();
        /* $indexServices.get(function(data){
 
@@ -64,9 +64,6 @@ define(/*['mainCtrl'],*/ function () {
         };
 
         $scope.index = 0;
-        /*$scope.go = function(index){
-            $ionicSlideBoxDelegate.slide(index);
-        };*/
         $scope.go_changed=function(index){
             changeCss(index)
         };
@@ -93,25 +90,11 @@ define(/*['mainCtrl'],*/ function () {
                 getTimes();
             }
         };
-        
 
-        // $scope.doCheck = function(){
-        //    var $gallery = $("#gallery"), $galleryImg = $("#galleryImg"),
-        //         $uploaderFiles = $("#uploaderFiles");
-        //     console.log(11)
-        //     $gallery.fadeIn(100);
-        //     $gallery.on("click", function(){
-        //         console.log(1)
-        //         $gallery.fadeOut(100);
-        //     });
-        // }
 
-        $scope.test = function(){
-            $('#backdrop').removeClass('visible active')
-        }
     }
     
-    ctrl.$inject = ['$scope', '$ionicPopover',/*'$mainServices', '$indexServices', */'$ionicTabsDelegate', '$ionicSlideBoxDelegate'];
+    ctrl.$inject = ['$scope', '$ionicPopover', '$ionicPopup', /*'$mainServices', '$indexServices', */'$ionicTabsDelegate', '$ionicSlideBoxDelegate'];
     return ctrl;
     
 });

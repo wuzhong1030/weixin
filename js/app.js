@@ -6,7 +6,7 @@ define(['angular',
         'ionicAngular',
         'services',
         'controllers',
-        'directives',
+        'directives'
         ],
 
     function (angular,ionic ,uiRouter) {

@@ -94,7 +94,7 @@
   color: #0D0D0D;
 }
 .nav-box > ul > li.active > span{
-  color: #0c60ee;
+  color: #387ef5;
 }
 .nav-box > .dot-line {
   display: block;
@@ -103,10 +103,41 @@
   left: 5%;
   width: 23%;
   height: 2px;
-  background: #0c60ee;
+  background: #387ef5;
   opacity: 1;
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
+.photo-camera{
+  color: #387ef5;
+  font-size: 28px;
+}
+.photo-progress{
+  padding: 16px;
+}
+.photo-progress-image{
+  display: block;
+  width:20%;
+  margin-right: 15px;
+  font-size: 0;
+}
+.photo-progress-image img{
+  width: 80%;
+}
+.wx-popup .popup{
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius:5px;
+  -moz-box-shadow:3px 3px 5px #333333;
+  -webkit-box-shadow:3px 3px 5px #333333;
+  box-shadow:3px 3px 5px #333333;
+}
+.detail-list-btn{
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+  font-size: 11px;
+}
+

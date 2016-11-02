@@ -1,4 +1,3 @@
-
 <ion-view view-title="订单详情">
     <ion-content overflow-scroll='false'>
         <nav class="nav-box">
@@ -20,10 +19,9 @@
                                 <p>机组型号: AZYGHBH54</p>
                                 <p>维修人员: 王闯</p>
                                 <p>企业发布时间: 2016-08-20</p>
-                                <p ng-click="openPopover($event)">详情信息 ▼</p>
+                                <p ng-click="openPopover($event)">详情信息 <i class="icon  ion-android-arrow-dropdown-circle"></i></p>
                                 <div class="weui-flex__item">
-                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary"
-                                       style="position: absolute;right: -8px;bottom: -8px;">未接单</a>
+                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_success detail-list-btn">未接单</a>
                                 </div>
                             </div>
                         </div>
@@ -40,10 +38,9 @@
                                 <p>机组型号: AZYGHBH54</p>
                                 <p>维修人员: 王闯</p>
                                 <p>企业发布时间: 2016-08-20</p>
-                                <p ng-click="openPopover($event)">详情信息 ▼</p>
+                                <p ng-click="openPopover($event)">详情信息 <i class="icon  ion-android-arrow-dropdown-circle"></i></p>
                                 <div class="weui-flex__item">
-                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_success"
-                                       style="position: absolute;right: -8px;bottom: -8px;">已分配</a>
+                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_success detail-list-btn">已分配</a>
                                 </div>
                             </div>
                         </div>
@@ -56,10 +53,9 @@
                                 <p>机组型号: AZYGHBH54</p>
                                 <p>维修人员: 王闯</p>
                                 <p>企业发布时间: 2016-08-20</p>
-                                <p ng-click="openPopover($event)">详情信息 ▼</p>
+                                <p ng-click="openPopover($event)">详情信息 <i class="icon  ion-android-arrow-dropdown-circle"></i></p>
                                 <div class="weui-flex__item">
-                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_success"
-                                       style="position: absolute;right: -8px;bottom: -8px;">已接单</a>
+                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_success detail-list-btn">已接单</a>
                                 </div>
                             </div>
                         </div>
@@ -76,10 +72,10 @@
                                 <p>派遣维修人员: 王闯</p>
                             </div>
                             <div class="weui-flex__item" style="text-align: right;position: relative;">
-                                <p ng-click="flag =! flag">详情信息 ▼</p>
-                                <div style="position: absolute;right: -8px;bottom: -8px;" ng-show="!flag">
-                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_complete">已完成</a>
-                                    <a href="#/rated" class="weui-btn weui-btn_mini weui-btn_rated">评价</a>
+                                <p ng-click="flag =! flag">详情信息 <i class="icon ion-chevron-{{flag?'up':'down'}}"></i></p>
+                                <div style="position: absolute;right: -7px;bottom: -12px;font-size: 11px;" ng-show="!flag">
+                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary" style="font-size: 11px;">已完成</a>
+                                    <a href="#/rated" class="weui-btn weui-btn_mini weui-btn_rated" style="font-size: 11px;">评价</a>
                                 </div>
                             </div>
                         </div>
@@ -95,42 +91,12 @@
                                 <p>故障现象: 调温不准确 阀件不工作</p>
                                 <p>质保情况: 保外</p>
                                 <p>付费情况: 已缴费</p>
-                                <div style="position: absolute;right: 3px;bottom: 3px;" ng-show="flag">
-                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_complete">已完成</a>
-                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_rated">评价</a>
+                                <div style="position: absolute;right: 5px;bottom: 5px;" ng-show="flag">
+                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_complete" style="font-size: 11px;">已完成</a>
+                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_rated" style="font-size: 11px;">评价</a>
                                 </div>
                             </div>
                         </div>
-                    </ion-item>
-                    <ion-item  style="margin-top: 8px;">
-                        <div class="weui-flex">
-                            <div class="weui-flex__item" >
-                                <p>订单编号: 201628124545</p>
-                                <p>维修公司名: 江苏浩瀚技术有限公司</p>
-                                <p>派遣维修人员: 王闯</p>
-                            </div>
-                            <div class="weui-flex__item" style="text-align: right;position: relative;">
-                                <p ng-click="flag =! flag">详情信息 ▼</p>
-                                <div style="position: absolute;right: -8px;bottom: -8px;">
-                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_complete">已完成</a>
-                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_rated">评价</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--<div class="weui-flex" ng-show="flag">
-                            <div class="weui-flex__item" >
-                                <p>订单编号: 201628124545</p>
-                                <p>维修公司名: 江苏浩瀚技术有限公司</p>
-                                <p>维修地址: 南京市中山南路122号</p>
-                                <p>空调机型: 商用空调机</p>
-                                <p>机组型号: EXZY66, 机内编号: DX332P, 外机编号: DC12K</p>
-                                <p>空调品牌: 格力空调4P</p>
-                                <p>派遣维修人员: 王闯</p>
-                                <p>故障现象: 调温不准确 阀件不工作</p>
-                                <p>质保情况: 保外</p>
-                                <p>付费情况: 已缴费</p>
-                            </div>
-                        </div>-->
                     </ion-item>
                 </ion-list>
             </ion-slide>

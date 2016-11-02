@@ -58,6 +58,7 @@ require.config({
         angularAnimate : {deps: ['angular']},
         angularSanitize : {deps: ['angular']},
         uiRouter : {deps: ['angular']},
+        ionicLazyLoad: {deps: ['angular'], exports: 'ionicLazyLoad'},
         ngResource: {deps: ['angular']},
         ionic :  {deps: ['angular'], exports : 'ionic'},
         /*ionicAngular: {deps: ['angular', 'ionic','uiRouter', 

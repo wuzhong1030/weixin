@@ -31,7 +31,7 @@ define(['app','services'/*,'mainDirective'*/], function(app){
             }
         }
     }])
-    .directive('cPhoto', function($ionicBackdrop){
+    .directive('cPhoto', function($ionicBackdrop, $ionicPopup){
         return{
             restrict: 'E',
             scope:{},
@@ -41,8 +41,7 @@ define(['app','services'/*,'mainDirective'*/], function(app){
                     angular.element("input[type='file']").click();
                 };
                 var $uploaderInput = angular.element("#uploaderInput"),
-                    uploadImgs = [],
-                    $gallery = angular.element("#gallery");
+                    uploadImgs = [];
                 $uploaderInput.on("change", function(e){
                     var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;
                     console.log(files)
@@ -54,25 +53,27 @@ define(['app','services'/*,'mainDirective'*/], function(app){
                             src = e.target.result;
                         }
                         uploadImgs.push({
-                            src: src
+                            src: src,
+                            name: file.name
                         });
                     };
                     scope.$apply(function () {
                         scope.uploadImgs = uploadImgs;
                     });
-                    console.log(scope.uploadImgs)
                 });
-                // $ionicBackdrop.retain();
+                var popup;
                 scope.checkImg = function(imgObj){
-                   // $ionicBackdrop.retain();
-                    $('body').append('<div class="backdrop visible active"></div>');
-                    $gallery.children('img').remove();
-                    $gallery.append(createImg(imgObj));
-                    $gallery.fadeIn(100);
+                    var temp = createImg(imgObj);
+                        popup = $ionicPopup.show({
+                            cssClass:'wx-popup',
+                            template: temp,
+                            title:imgObj.name,
+                            scope: scope
+                        });
                 };
 
                 scope.checkOver = function(){
-                    $gallery.fadeOut(100);
+                    popup.close();
                 };
 
                 scope.removeImg = function(index){
@@ -81,19 +82,10 @@ define(['app','services'/*,'mainDirective'*/], function(app){
                 };
 
                 function createImg(imgObj){
-                    var innerH = window.innerHeight - 60,//顶部的margin-top, 底部的height
-                        innerW = window.innerWidth,
-                        imgHTML,
-                        radio = innerH/innerW,
+                    var imgHTML,
                         img = new Image();
                     img.src = imgObj.src;
-                    $gallery.height(innerH).width(innerW).css('line-height', innerH + 'px');
-                    console.log(img.height, img.width);
-                    if(img.height/img.width > radio){
-                        imgHTML = '<img height="100%" alt="" src="'+ img.src +'" style="display: block;margin: 0 auto;">';
-                    }else{
-                        imgHTML = '<img width="100%" alt="" src="'+ img.src +'" style="vertical-align: middle;">';
-                    }
+                    imgHTML = '<img ng-click="checkOver()" width="100%" alt="" src="'+ img.src +'">';
                     return imgHTML;
                 }
             }
