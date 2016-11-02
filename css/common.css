@@ -54,6 +54,22 @@
   box-shadow: 0 3px 14px rgba(0, 0, 0, 0.35);
   padding: 12px;
 }
+@keyframes fade-in {
+  0% {opacity: 0;}
+  40% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-webkit-keyframes fade-in {
+  0% {opacity: 0;}
+  40% {opacity: 0;}
+  100% {opacity: 1;}
+}
+#wrapper-detail {
+  animation: fade-in;
+  animation-duration: .25s;
+  -webkit-animation:fade-in .25s;
+}
+
 .nav-box {
   width: 100%;
   background: #ffffff;

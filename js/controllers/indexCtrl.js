@@ -92,10 +92,25 @@ define(/*['mainCtrl'],*/ function () {
             if(flag){
                 getTimes();
             }
+        };
+        
+
+        // $scope.doCheck = function(){
+        //    var $gallery = $("#gallery"), $galleryImg = $("#galleryImg"),
+        //         $uploaderFiles = $("#uploaderFiles");
+        //     console.log(11)
+        //     $gallery.fadeIn(100);
+        //     $gallery.on("click", function(){
+        //         console.log(1)
+        //         $gallery.fadeOut(100);
+        //     });
+        // }
+
+        $scope.test = function(){
+            $('#backdrop').removeClass('visible active')
         }
-
     }
-
+    
     ctrl.$inject = ['$scope', '$ionicPopover',/*'$mainServices', '$indexServices', */'$ionicTabsDelegate', '$ionicSlideBoxDelegate'];
     return ctrl;
     

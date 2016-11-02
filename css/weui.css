@@ -872,9 +872,10 @@ button.weui-form-preview__btn {
 }
 .weui-gallery__img {
   position: absolute;
+  margin: auto;
   top: 0;
   right: 0;
-  bottom: 60px;
+  bottom: 0;
   left: 0;
   background: center center no-repeat;
   background-size: contain;

@@ -60,7 +60,7 @@ define(['app'], function(app) {
                     templateUrl: 'templates/order/detail.tpl.html',
                     controller: 'indexCtrl'
                 })
-                .state('login', { //详细
+                .state('login', { //登陆
                     url: '/login',
                     templateUrl: 'templates/order/login.tpl.html',
                     controller: 'indexCtrl'

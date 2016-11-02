@@ -1,20 +1,4 @@
-<style>
-    @keyframes fade-in {
-        0% {opacity: 0;}/*初始状态 透明度为0*/
-        40% {opacity: 0;}/*过渡状态 透明度为0*/
-        100% {opacity: 1;}/*结束状态 透明度为1*/
-    }
-    @-webkit-keyframes fade-in {/*针对webkit内核*/
-        0% {opacity: 0;}
-        40% {opacity: 0;}
-        100% {opacity: 1;}
-    }
-    #wrapper-detail {
-        animation: fade-in;/*动画名称*/
-        animation-duration: .25s;/*动画持续时间*/
-        -webkit-animation:fade-in .25s;/*针对webkit内核*/
-    }
-</style>
+
 <ion-view view-title="订单详情">
     <ion-content overflow-scroll='false'>
         <nav class="nav-box">
@@ -95,7 +79,7 @@
                                 <p ng-click="flag =! flag">详情信息 ▼</p>
                                 <div style="position: absolute;right: -8px;bottom: -8px;" ng-show="!flag">
                                     <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_complete">已完成</a>
-                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_rated">评价</a>
+                                    <a href="#/rated" class="weui-btn weui-btn_mini weui-btn_rated">评价</a>
                                 </div>
                             </div>
                         </div>

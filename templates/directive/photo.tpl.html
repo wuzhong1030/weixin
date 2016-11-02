@@ -1,0 +1,21 @@
+<div class="weui-cells_form" style="margin-top: 0;background-color: #FFFFFF;font-size: 17px;position: relative">
+    <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">照片</label></div>
+        <div class="weui-cell__bd">
+            <i class="icon ion-android-camera" style="color: #79b289;font-size: 28px;" ng-click="cameraClick()"></i>
+            <input id="uploaderInput" type="file" type="file" accept="image/*" style="display: none">
+        </div>
+    </div>
+    <div class="weui-progress" style="padding: 16px;" ng-repeat="img in uploadImgs">
+        <a href="javascript:;" style="display: block;width:20%;margin-right: 15px;font-size: 0;" id="uploaderFiles" ng-click="checkImg(img)">
+            <img src="{{img.src}}" width="80%" alt="">
+        </a>
+        <div class="weui-progress__bar">
+            <div class="weui-progress__inner-bar js_progress" style="width: 100%;"></div>
+        </div>
+        <a href="javascript:;" class="weui-progress__opr" ng-click="removeImg($index)">
+            <i class="weui-icon-cancel"></i>
+        </a>
+    </div>
+    <div class="weui-gallery" id="gallery" ng-click="checkOver()" style="display: none;position: fixed;line-height:503px;background:rgba(0,0,0,.8);z-index: 1000;"></div>
+</div>

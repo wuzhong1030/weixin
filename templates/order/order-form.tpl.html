@@ -1,6 +1,6 @@
 <ion-view>
     <ion-content overflow-scroll='false'>
-        <div class="weui-cells weui-cells_form">
+        <div class="weui-cells weui-cells_form" style="margin-top: 15px;">
             <div class="weui-cell">
                 <div class="weui-cell__hd"><label for="" class="weui-label">用户名称(全称)</label></div>
                 <div class="weui-cell__bd">
@@ -55,13 +55,13 @@
                     <input class="weui-input" type="text">
                 </div>
             </div>
-            <div class="weui-cell">
-                <div class="weui-cell__hd"><label class="weui-label">照片</label></div>
-                <div class="weui-cell__bd">
-                    <i class="icon ion-android-camera" style="color: #79b289;font-size: 28px;"></i>
-                </div>
-            </div>
         </div>
-        <a href="javascript:;" class="weui-btn weui-btn_primary" style="width: 30%;margin-top: 18px;margin-right: 18px;">提交</a>
+        <c-photo></c-photo>
     </ion-content>
+    <ion-footer-bar class="bar bar-footer button-bar" style="height: 50px;border-top-width: 0;">
+        <button class="button button-balanced" style="font-size: inherit;font-weight: 450;">提 交</button>
+    </ion-footer-bar>
 </ion-view>
+<div class="backdrop visible active" ng-click="test()" id="backdrop" style="z-index: 999;">
+    <img src="./img/11.jpg" width="100%" alt="" style="display: block;margin: 0 auto;">
+</div>
