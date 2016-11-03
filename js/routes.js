@@ -13,7 +13,7 @@ define(['app'], function(app) {
                 templateUrl: 'templates/wx.tpl.html'
             })*/
             // Each tab has its own nav history stack:
-            
+
             .state('bonus', {
                 url: '/bonus',
                 templateUrl: 'templates/bonus/bonus.tpl.html',
@@ -65,9 +65,14 @@ define(['app'], function(app) {
                     templateUrl: 'templates/order/login.tpl.html',
                     controller: 'indexCtrl'
                 })
-                .state('rated', { //详细
+                .state('rated', { //评价
                     url: '/rated',
                     templateUrl: 'templates/order/rated.tpl.html',
+                    controller: 'indexCtrl'
+                })
+                .state('adress', { //我的地址
+                    url: '/adress',
+                    templateUrl: 'templates/order/my-address.tpl.html',
                     controller: 'indexCtrl'
                 })
             /*.state('tab.sort', {

@@ -1,6 +1,6 @@
 define(/*['mainCtrl'],*/ function () {
     'use strict';
-    function ctrl($scope, $ionicPopover, $ionicPopup, /*$mainServices, $indexServices,*/ $ionicTabsDelegate, $ionicSlideBoxDelegate) {
+    function ctrl($scope, $ionicPopover, $ionicPopup, $ionicModal, $ionicNavBarDelegate,/*$mainServices, $indexServices,*/ $ionicTabsDelegate, $ionicSlideBoxDelegate) {
         //$mainServices.showLoading();
        /* $indexServices.get(function(data){
 
@@ -11,6 +11,7 @@ define(/*['mainCtrl'],*/ function () {
             $scope.couponList = data.coupon.item;
             $scope.dazheList = data.tejia.item;
         });*/
+        $ionicNavBarDelegate.setTitle('订单详情');
         $scope.popover = $ionicPopover.fromTemplateUrl('my-popover.html', {
             scope: $scope
         });
@@ -91,10 +92,49 @@ define(/*['mainCtrl'],*/ function () {
             }
         };
 
+        // 触发一个按钮点击，或一些其他目标
+        $scope.addAddress = function() {
+            $scope.data = {}
+
+            // 一个精心制作的自定义弹窗
+            var myPopup = $ionicPopup.show({
+                template: '<input type="password" ng-model="data.wifi">',
+                title: '输入地址',
+                scope: $scope,
+                buttons: [
+                    { text: '取消' },
+                    {
+                        text: '确定',
+                        type: 'button-positive',
+                        onTap: function(e) {
+                            if (!$scope.data.wifi) {
+                                e.preventDefault();
+                            } else {
+                                return $scope.data.wifi;
+                            }
+                        }
+                    },
+                ]
+            });
+
+        };
+
+        var modal;
+        $scope.rated = function() {
+            $ionicModal.fromTemplateUrl('rated_modal.tpl.html', {
+                scope: $scope
+            }).then(function(modalObj) {
+                modal = modalObj;
+                modal.show();
+            });
+        };
+        $scope.closeModal = function() {
+            modal.remove();
+        };
 
     }
     
-    ctrl.$inject = ['$scope', '$ionicPopover', '$ionicPopup', /*'$mainServices', '$indexServices', */'$ionicTabsDelegate', '$ionicSlideBoxDelegate'];
+    ctrl.$inject = ['$scope', '$ionicPopover', '$ionicPopup', '$ionicModal','$ionicNavBarDelegate',/*'$mainServices', '$indexServices', */'$ionicTabsDelegate', '$ionicSlideBoxDelegate'];
     return ctrl;
     
 });

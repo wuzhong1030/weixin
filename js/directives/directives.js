@@ -43,8 +43,7 @@ define(['app','services'/*,'mainDirective'*/], function(app){
                 var $uploaderInput = angular.element("#uploaderInput"),
                     uploadImgs = [];
                 $uploaderInput.on("change", function(e){
-                    var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;
-                    console.log(files)
+                    var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files, timestamp = +new Date();
                     for (var i = 0, len = files.length; i < len; ++i) {
                         var file = files[i];
                         if (url) {
@@ -54,12 +53,17 @@ define(['app','services'/*,'mainDirective'*/], function(app){
                         }
                         uploadImgs.push({
                             src: src,
-                            name: file.name
+                            name: file.name,
+                            timestamp: timestamp,
+                            readableSize: bytesToSize(file.size)
                         });
                     };
-                    scope.$apply(function () {
-                        scope.uploadImgs = uploadImgs;
-                    });
+                    scope.uploadImgs = uploadImgs;
+                    setTimeout(function () {
+                        angular.forEach(uploadImgs, function (file) {
+                            uploadFile(file)
+                        })
+                    })
                 });
                 var popup;
                 scope.checkImg = function(imgObj){
@@ -80,13 +84,52 @@ define(['app','services'/*,'mainDirective'*/], function(app){
                     uploadImgs.splice(index, 1);
                     scope.uploadImgs = uploadImgs;
                 };
-
+                function bytesToSize(bytes) {
+                    var sizes = ['Bytes', 'KB', 'MB'];
+                    if (bytes == 0) return 'n/a';
+                    var i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+                    return (bytes / Math.pow(1024, i)).toFixed(1) + ' ' + sizes[i];
+                };
                 function createImg(imgObj){
                     var imgHTML,
                         img = new Image();
                     img.src = imgObj.src;
                     imgHTML = '<img ng-click="checkOver()" width="100%" alt="" src="'+ img.src +'">';
                     return imgHTML;
+                };
+                function uploadFile(file) {
+                    var url = 'http://192.168.1.41:8080/oa/file/upload';
+                    var xhr = new XMLHttpRequest();
+                    var fd = new FormData();
+                    xhr.open("POST", url, true);
+                    xhr.setRequestHeader("POWERED-BY-MENGXIANHUI", "Approve");
+                    xhr.setRequestHeader("Content-Type", "application/xml");
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState == 4 && xhr.status == 200) {
+                            var data = JSON.parse(xhr.responseText)
+                                , url = 'http://192.168.1.41:8080/upload/files/' + data.name
+                                , curTimestamp = file.timestamp;
+                            file.id = data.id;
+                            console.log(data, url)
+                            //fileIds.push(data.id);
+                            //scope.output = scope.outputType=='arr'?fileIds:fileIds + '';
+                            //_setIcon(curTimestamp, url, data.type);
+                            /*scope.$apply(function () {
+                                scope.urlMap[curTimestamp] = url;
+                            })*/
+                        }else{
+                            console.log('不允许跨域')
+                        }
+                    };
+                    xhr.upload.onprogress = function (e) {
+                        if (e.lengthComputable) {
+                            var percent = Math.round(e.loaded / e.total);
+                            console.log(percent);
+                            //_setProgress(file.timestamp, percent * 100);
+                        }
+                    };
+                    fd.append("file", file);
+                    xhr.send(fd);
                 }
             }
         }

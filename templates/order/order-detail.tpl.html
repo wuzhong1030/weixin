@@ -1,4 +1,4 @@
-<ion-view view-title="订单详情">
+<ion-view>
     <ion-content overflow-scroll='false'>
         <nav class="nav-box">
             <ul>
@@ -75,7 +75,7 @@
                                 <p ng-click="flag =! flag">详情信息 <i class="icon ion-chevron-{{flag?'up':'down'}}"></i></p>
                                 <div style="position: absolute;right: -7px;bottom: -12px;font-size: 11px;" ng-show="!flag">
                                     <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary" style="font-size: 11px;">已完成</a>
-                                    <a href="#/rated" class="weui-btn weui-btn_mini weui-btn_rated" style="font-size: 11px;">评价</a>
+                                    <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_rated" style="font-size: 11px;" ng-click="rated()">评价</a>
                                 </div>
                             </div>
                         </div>
@@ -110,4 +110,46 @@
             <p>机组型号: AZYGHBH54</p>
             <p>维修人员: 王闯</p>
     </ion-popover-view>
+</script>
+<script id="rated_modal.tpl.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar align-title="center" class="bar-dark">
+            <button class="button button-clear" ng-click="closeModal()">取消</button>
+            <h1 class="title">评价</h1>
+            <button class="button button-clear">发表</button>
+        </ion-header-bar>
+        <ion-content class="has-header padding">
+                <section class="item">
+                    <p>维修公司名: 江苏浩瀚技术有限公司</p>
+                    <p>派遣维修人员: 王申 <i class="ion-ios-star" style="color: #ff363a;"></i>
+                        <i class="ion-ios-star" style="color: #ff363a;"></i>
+                        <i class="ion-ios-star" style="color: #ff363a;"></i>
+                        <i class="ion-ios-star" style="color: #ff363a;"></i>
+                        <i class="ion-ios-star" style="color: #4d4d4d;"></i>
+                    </p>
+                </section>
+                <div class="weui-flex item" style="margin-top: 8px;">
+                    <div class="weui-flex__item">
+                        <h3>派遣维修人员信息</h3>
+                        <p>名字: 王申</p>
+                        <p>工作经验: 7年</p>
+                        <p>所属公司: 江苏格力空调有限公司分部</p>
+                        <p>星评:
+                            <c-mark mark="rated"></c-mark>
+                        </p>
+                    </div>
+                    <div class="weui-flex__item">
+                        <img src="./img/adam.jpg" width="100%" alt="">
+                    </div>
+                </div>
+                <div class="list" style="margin-top: 8px;">
+                    <label class="item item-input">
+                        <textarea class="weui-textarea" placeholder="反馈意见" rows="4"></textarea>
+                    </label>
+                </div>
+        </ion-content>
+        <ion-footer-bar class="bar bar-footer button-bar" style="height: 50px;">
+            <button class="button button-positive" style="font-size: inherit;font-weight: 450;">登 陆</button>
+        </ion-footer-bar>
+    </ion-modal-view>
 </script>

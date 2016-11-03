@@ -24,6 +24,7 @@ require.config({
         ionic:'../lib/ionic/js/ionic',
         ionicAngular:'../lib/ionic/js/ionic-angular',
 
+        ocLazyLoad: '../lib/ocLazyLoad',
         app:'app',
         config:'config',
 
@@ -58,8 +59,8 @@ require.config({
         angularAnimate : {deps: ['angular']},
         angularSanitize : {deps: ['angular']},
         uiRouter : {deps: ['angular']},
-        ionicLazyLoad: {deps: ['angular'], exports: 'ionicLazyLoad'},
         ngResource: {deps: ['angular']},
+        ocLazyLoad: {exports: 'ocLazyLoad'},
         ionic :  {deps: ['angular'], exports : 'ionic'},
         /*ionicAngular: {deps: ['angular', 'ionic','uiRouter', 
                               'angularAnimate', 'angularSanitize',
