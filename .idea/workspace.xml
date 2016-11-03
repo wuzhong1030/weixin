@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2864dcbc-1646-4666-a385-da99f7809e3d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ocLazyLoad.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/ocLazyLoad.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/order/my-address.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/weixin.iml" afterPath="$PROJECT_DIR$/.idea/weixin.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/config.js" afterPath="$PROJECT_DIR$/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllers/indexCtrl.js" afterPath="$PROJECT_DIR$/js/controllers/indexCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/directives/directives.js" afterPath="$PROJECT_DIR$/js/directives/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/routes.js" afterPath="$PROJECT_DIR$/js/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/ionic/css/ionic.css" afterPath="$PROJECT_DIR$/lib/ionic/css/ionic.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/bonus/bonus-record.tpl.html" afterPath="$PROJECT_DIR$/templates/bonus/bonus-record.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/order/login.tpl.html" afterPath="$PROJECT_DIR$/templates/order/login.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/order/order-detail.tpl.html" afterPath="$PROJECT_DIR$/templates/order/order-detail.tpl.html" />
     </list>
@@ -41,10 +31,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="directives.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="directives.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/directives/directives.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
+            <state relative-caret-position="1027">
               <caret line="105" column="76" selection-start-line="105" selection-start-column="76" selection-end-line="105" selection-end-column="76" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -73,11 +63,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="login.tpl.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/order/login.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="517">
+              <caret line="23" column="95" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="order-detail.tpl.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/order/order-detail.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="115" column="60" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
+            <state relative-caret-position="661">
+              <caret line="144" column="39" selection-start-line="144" selection-start-column="39" selection-end-line="144" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#ion-item#0;n#ion-list#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#ion-item#0;n#ion-list#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -101,8 +101,8 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            <state relative-caret-position="312">
+              <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -124,18 +124,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="168">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="216">
+              <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -204,17 +204,17 @@
         <option value="$PROJECT_DIR$/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/templates/order/my_address.tpl.html" />
-        <option value="$PROJECT_DIR$/js/routes.js" />
         <option value="$PROJECT_DIR$/templates/order/rated.tpl.html" />
-        <option value="$PROJECT_DIR$/templates/order/login.tpl.html" />
         <option value="$PROJECT_DIR$/templates/order/my-address.tpl.html" />
         <option value="$PROJECT_DIR$/lib/ionic/css/ionic.css" />
         <option value="$PROJECT_DIR$/templates/bonus/bonus-record.tpl.html" />
         <option value="$PROJECT_DIR$/js/controllers/indexCtrl.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/config.js" />
-        <option value="$PROJECT_DIR$/templates/order/order-detail.tpl.html" />
         <option value="$PROJECT_DIR$/js/directives/directives.js" />
+        <option value="$PROJECT_DIR$/templates/order/login.tpl.html" />
+        <option value="$PROJECT_DIR$/js/routes.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/templates/order/order-detail.tpl.html" />
+        <option value="$PROJECT_DIR$/js/config.js" />
       </list>
     </option>
   </component>
@@ -428,15 +428,15 @@
       <workItem from="1478082401088" duration="8549000" />
       <workItem from="1478133448732" duration="251000" />
       <workItem from="1478133711490" duration="6000" />
-      <workItem from="1478133985339" duration="16275000" />
+      <workItem from="1478133985339" duration="17920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95524000" />
+    <option name="totallyTimeSpent" value="97169000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -686,14 +686,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="39" column="18" selection-start-line="10" selection-start-column="4" selection-end-line="39" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/order/login.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1624,6 +1616,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/directives/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1027">
+          <caret line="105" column="76" selection-start-line="105" selection-start-column="76" selection-end-line="105" selection-end-column="76" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1478163463257" expanded="true" signature="417:465" placeholder="..." />
+            <marker date="1478163463257" expanded="true" signature="545:593" placeholder="..." />
+            <marker date="1478163463257" expanded="true" signature="673:721" placeholder="..." />
+            <marker date="1478163463257" expanded="true" signature="801:849" placeholder="..." />
+            <marker date="1478163463257" expanded="true" signature="929:977" placeholder="..." />
+            <marker date="1478163463257" expanded="true" signature="4345:4399" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/order/my-address.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1638,8 +1646,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/routes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        <state relative-caret-position="312">
+          <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/order/login.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="23" column="95" selection-start-line="23" selection-start-column="95" selection-end-line="23" selection-end-column="95" />
           <folding />
         </state>
       </provider>
@@ -1655,26 +1679,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/order/order-detail.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="115" column="60" selection-start-line="115" selection-start-column="60" selection-end-line="115" selection-end-column="60" />
+        <state relative-caret-position="661">
+          <caret line="144" column="39" selection-start-line="144" selection-start-column="39" selection-end-line="144" selection-end-column="39" />
           <folding>
             <element signature="n#style#0;n#ion-item#0;n#ion-list#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#ion-item#0;n#ion-list#0;n#ion-slide#0;n#ion-slide-box#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -1694,19 +1702,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/directives/directives.js">
+    <entry file="file://$PROJECT_DIR$/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="105" column="76" selection-start-line="105" selection-start-column="76" selection-end-line="105" selection-end-column="76" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1478163463257" expanded="true" signature="417:465" placeholder="..." />
-            <marker date="1478163463257" expanded="true" signature="545:593" placeholder="..." />
-            <marker date="1478163463257" expanded="true" signature="673:721" placeholder="..." />
-            <marker date="1478163463257" expanded="true" signature="801:849" placeholder="..." />
-            <marker date="1478163463257" expanded="true" signature="929:977" placeholder="..." />
-            <marker date="1478163463257" expanded="true" signature="4345:4399" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>

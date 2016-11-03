@@ -17,8 +17,8 @@ define(['app'], function(app) {
             .state('bonus', {
                 url: '/bonus',
                 templateUrl: 'templates/bonus/bonus.tpl.html',
-                cache: false,
-                 controller: 'indexCtrl'
+                data:{pageTitle:'bonus'},
+                controller: 'indexCtrl'
             })
             .state('record', {
                 url: '/record',
