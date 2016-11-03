@@ -70,8 +70,8 @@ define(['app'], function(app) {
                     templateUrl: 'templates/order/rated.tpl.html',
                     controller: 'indexCtrl'
                 })
-                .state('adress', { //我的地址
-                    url: '/adress',
+                .state('address', { //我的地址
+                    url: '/address',
                     templateUrl: 'templates/order/my-address.tpl.html',
                     controller: 'indexCtrl'
                 })

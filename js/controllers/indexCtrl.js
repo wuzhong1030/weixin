@@ -98,8 +98,9 @@ define(/*['mainCtrl'],*/ function () {
 
             // 一个精心制作的自定义弹窗
             var myPopup = $ionicPopup.show({
-                template: '<input type="password" ng-model="data.wifi">',
-                title: '输入地址',
+                template: '<input type="text" ng-model="data.wifi">',
+                title: '<i class="icon ion-location"></i> <span>输入地址</span>',
+                cssClass:'wx-popup',
                 scope: $scope,
                 buttons: [
                     { text: '取消' },
