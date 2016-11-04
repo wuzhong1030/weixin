@@ -61,11 +61,7 @@ define(/*['mainCtrl'],*/ function () {
             $(".nav-box > ul > li:eq("+type+") > span").css('color', '#333');
         }
 
-        /*$scope.selectType = function(type){
-            changeCss(type);
-            $ionicSlideBoxDelegate.slide(type);
-        };*/
-        _this.selectType = function(type){
+        $scope.selectType = function(type){
             changeCss(type);
             $ionicSlideBoxDelegate.slide(type);
         };
@@ -138,6 +134,17 @@ define(/*['mainCtrl'],*/ function () {
         $scope.closeModal = function() {
             modal.remove();
         };
+
+        $ionicModal.fromTemplateUrl('recip_modal.tpl.html', {
+               scope: $scope,
+               animation: 'slide-in-up'
+           }).then(function(modal) {
+                 $scope.modal = modal;
+        });
+
+        $scope.goExchange = function(){
+            $scope.modal.show();
+        }
 
     }
     
