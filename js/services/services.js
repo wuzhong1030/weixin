@@ -12,8 +12,5 @@ define(['app','config'/*, 'mainServices', 'indexServices', 'mapServices', 'moreS
         // services.service('$moreServices', require('moreServices'));
         // services.factory('$backButtonServices', require('backButtonServices'));
 
-
-
-
     return services;
 });

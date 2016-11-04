@@ -91,10 +91,10 @@
   float: left;
 }
 .nav-box > ul > li > span{
-  color: #0D0D0D;
+  color: #999;
 }
 .nav-box > ul > li.active > span{
-  color: #387ef5;
+  color: #333;
 }
 .nav-box > .dot-line {
   display: block;

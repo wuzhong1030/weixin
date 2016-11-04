@@ -20,9 +20,9 @@ define(function(){
                 event.preventDefault();
             });
 
-           /* $ionicPlatform.registerBackButtonAction(function(){
+            $ionicPlatform.registerBackButtonAction(function(){
                 console.log(2);
-            });*/
+            });
             // cancel custom back behaviour
             $scope.$on('$destroy', function() {
                 deregisterHardBack();

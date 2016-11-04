@@ -11,6 +11,8 @@ define(/*['mainCtrl'],*/ function () {
             $scope.couponList = data.coupon.item;
             $scope.dazheList = data.tejia.item;
         });*/
+        var _this = this;
+
         $ionicNavBarDelegate.setTitle('订单详情');
         $scope.popover = $ionicPopover.fromTemplateUrl('my-popover.html', {
             scope: $scope
@@ -55,11 +57,15 @@ define(/*['mainCtrl'],*/ function () {
                     $(".dot-line").css('left', '72%');
                     break;
             }
-            $(".nav-box > ul > li > span").css('color', '#0D0D0D');
-            $(".nav-box > ul > li:eq("+type+") > span").css('color', '#0c60ee');
+            $(".nav-box > ul > li > span").css('color', '#999');
+            $(".nav-box > ul > li:eq("+type+") > span").css('color', '#333');
         }
 
-        $scope.selectType = function(type){
+        /*$scope.selectType = function(type){
+            changeCss(type);
+            $ionicSlideBoxDelegate.slide(type);
+        };*/
+        _this.selectType = function(type){
             changeCss(type);
             $ionicSlideBoxDelegate.slide(type);
         };

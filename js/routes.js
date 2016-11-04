@@ -2,8 +2,18 @@
 
 define(['app'], function(app) {
     'use strict';
-
-    app.config(['$stateProvider', '$urlRouterProvider',
+    app/*.run(function ($ionicPlatform, $http, $rootScope) {
+            $rootScope.platform = ionic.Platform.platform();
+            $http.defaults.headers.common.token = 'admin';
+            $rootScope.$on('$ionicView.beforeEnter', function(event, viewData) {
+                console.log(111)
+                viewData.enableBack = true;
+            });
+            $rootScope.$on('$ionicView.afterEnter', function() {
+                console.log(222)
+            }, false);
+        })*/
+        .config(['$stateProvider', '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
             $stateProvider
             // setup an abstract state for the tabs directive
