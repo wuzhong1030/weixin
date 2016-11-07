@@ -13,7 +13,7 @@ define(/*['mainCtrl'],*/ function () {
         });*/
         var _this = this;
 
-        $ionicNavBarDelegate.setTitle('订单详情');
+        //$ionicNavBarDelegate.setTitle('订单详情');
         $scope.popover = $ionicPopover.fromTemplateUrl('my-popover.html', {
             scope: $scope
         });
